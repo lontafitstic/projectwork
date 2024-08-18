@@ -1,7 +1,7 @@
 services:
   server:
     container_name: pythonserver
-    image: pythonserver:2.1
+    image: lorenzofitstic/pythonserver:2.2
     ports:
       - "5000:5000"
     depends_on:
@@ -13,7 +13,7 @@ services:
       - "6379:6379"
   client:
     container_name: react-nginx
-    image: reactclient:2.2
+    image: lorenzofitstic/reactclient:2.3
     ports:
       - "80:80"
     depends_on:
