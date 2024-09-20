@@ -12,7 +12,7 @@ export default function PercentualePresenza() {
     const[user, setUser] = useState<User | null>(null)
     useEffect(() => {
         (async() => {try {
-            const resp = await httpClient.get("http://server:5000/@me");
+            const resp = await httpClient.get("http://localhost:5000/@me");
             setUser(resp.data );
           } catch (error: any) {
               console.log("PercentualePresenza says: Not authenitcated");

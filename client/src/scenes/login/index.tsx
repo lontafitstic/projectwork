@@ -11,7 +11,7 @@ const LoginPage: React.FC = () => {
     const logInUser = async () => {
 
       try {
-        const resp = await httpClient.post("http://server:5000/login", {
+        const resp = await httpClient.post("http://localhost:5000/login", {
           email: email,
           password: password
         }, {
